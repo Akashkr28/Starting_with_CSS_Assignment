@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="01_style.css">
+    <style>
+        .internal{
+            color: #5d715d;
+        }
+
+        .inline_internal{
+            color: black;
+        }
+
+        .int_ext{
+            color: orangered;
+        }
+    </style>
+    <!-- depeending on the order internal wins between internal and external since I have imported internal after external -->
+</head>
+<body>
+    <!-- Div with Inline CSS -->
+    <div>
+        <p style="color: #00ff;">Inline Css</p>
+    </div>
+
+    <!-- Div with Internal CSS -->
+    <div>
+        <p class="internal">Internal CSS</p>
+    </div>
+
+    <!-- Div with External Css -->
+    <div>
+        <p id="external">External CSS</p>
+    </div>
+
+    <!-- Div with Inline + Internal CSS -->
+    <div>
+        <p style="background-color: black; color: white;" class="inline_internal">Inline + Internal</p>
+    </div>
+
+    <!-- Div with Inline + External CSS -->
+    <div>
+        <p style="background-color: black; color: white;" id="inline_external">Inline + External</p>
+    </div>
+
+    <!-- Div with Internal + External CSS -->
+    <div>
+        <p class="int_ext" id="inter_exter">Internal + External</p>
+    </div>
+</body>
+</html>

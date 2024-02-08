@@ -1,0 +1,12 @@
+#external {
+    color: rgb(155, 193, 16);
+}
+
+#inline_external{
+    color: yellow;
+    background: red;
+}
+
+#inter_exter{
+    color: red;
+}
